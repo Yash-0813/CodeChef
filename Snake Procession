@@ -1,0 +1,26 @@
+R=int(input())
+for i in range(R):
+    c=0
+    flag=0
+    n=int(input())
+    s=input()
+    a=""
+    c=0
+    for i in s:
+        if(i=='H'or i=="T"):
+           a+=i
+          
+    if(a==""):
+        print("Valid")
+    elif(len(a)%2==0):
+        for i in range(0,len(a),2):
+           if a[i:i+2]!="HT":
+               c=1
+               break
+        if (c==1):
+           print("Invalid")
+        else:
+           print("Valid")
+               
+    else:
+        print("Invalid")
