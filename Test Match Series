@@ -1,0 +1,19 @@
+# cook your dish here
+t=int(input())
+while(t>0):
+    l=list(map(int,input().split()))
+    I,E,Z=0,0,0
+    for i in range(len(l)):
+        if(l[i]==1):
+            I+=1
+        elif(l[i]==2):
+            E+=1
+        else:
+            Z+=1
+    if(I>E):
+        print("INDIA")
+    elif(E>I):
+        print("ENGLAND")
+    else:
+        print("DRAW")
+    t-=1
