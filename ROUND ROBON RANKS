@@ -1,0 +1,7 @@
+# cook your dish here
+t=int(input())
+while(t):
+    N,k=map(int,input().split())
+    c=(2*N-k-1)//2
+    print(2*c)
+    t=t-1
