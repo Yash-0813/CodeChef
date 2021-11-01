@@ -1,0 +1,11 @@
+# cook your code here
+t=int(input())
+while(t>0):
+    A=list(map(int,input().split()))
+    if(A[0]>=A[1] and A[0]<=A[2]):
+         print("Take second dose now")
+    elif( A[0]>A[2]):
+         print("Too Late") 
+    elif(A[0]<A[1]):
+         print("Too Early")
+    t=t-1
