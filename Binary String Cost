@@ -1,0 +1,6 @@
+for i in range(int(input())):
+    n,x,y=map(int,input().split(" "))
+    s=input()
+    c01=s.count('01')
+    c10=s.count('10')
+    print(min(x*c01,y*c10))
