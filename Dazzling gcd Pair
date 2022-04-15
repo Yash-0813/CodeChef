@@ -1,0 +1,19 @@
+# cook your dish here
+for i in range(int(input())):
+    a,b=map(int,input().split(" "))
+    gcd=-1
+    if(a%2==0):
+        if(a+2<=b):
+            print(a,"",a+2)
+        else:
+            print(gcd)
+    elif(a%3==0):
+        if(a+3<=b):
+            print(a,"",a+3)
+        else:
+            print(gcd)
+    else:
+        if(a+3<=b):
+            print(a+1,"",a+3)
+        else:
+            print(gcd)
