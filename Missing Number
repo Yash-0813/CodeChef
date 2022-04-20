@@ -1,0 +1,43 @@
+for i in range(int(input())):
+    l=list(map(int,input().split()))
+    l.sort()
+    if l==[0,1,1,2]:
+       print(1,1)
+       continue
+       
+    su=l[0]
+    ad=l[2]
+    x=su+ad
+    y=ad-su
+    if (x%2==0 and y%2==0 and x!=0 and y!=0):
+            a=x//2
+            b=y//2
+            if (a*b==l[3] and a//b==l[1] and a>=1 and a<=10000 and b>=1 and b<=10000):
+              print(a,b)
+              continue
+              
+              
+    su1=l[0]
+    ad1=l[3]
+    x1=su1+ad1
+    y1=ad1-su1
+    if (x1%2==0 and y1%2==0and x1!=0 and y1!=0):
+            a1=x1//2
+            b1=y1//2
+            if (a1*b1==l[2] and a1//b1==l[1] and a1>=1 and a1<=10000 and b1>=1 and b1<=10000):
+              print(a1,b1)
+              continue
+          
+              
+    su2=l[1]
+    ad2=l[2]
+    x2=su2+ad2
+    y2=ad2-su2
+    if (x2%2==0 and y2%2==0and x2!=0 and y2!=0):
+            a2=x2//2
+            b2=y2//2
+            if (a2*b2==l[3] and a2//b2==l[0] and a2>=1 and a2<=10000 and b2>=1 and b2<=10000):
+              print(a2,b2)
+              continue
+    
+    print(-1,-1)
