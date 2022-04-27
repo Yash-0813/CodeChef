@@ -1,0 +1,5 @@
+# cook your dish here
+for i in range(int(input())):
+    s=int(input())
+    y=s+1
+    print(y*-1)
