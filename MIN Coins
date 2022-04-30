@@ -1,0 +1,12 @@
+# cook your dish here
+for i in range(int(input())):
+    x=int(input())
+    if(x%5==0 or x%10==0):
+        
+        tmp=x//10
+        if(x%10==5):
+            tmp+=1
+        
+        print(tmp)
+    else:
+        print(-1)
