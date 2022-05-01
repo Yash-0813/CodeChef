@@ -1,0 +1,10 @@
+# cook your dish here
+for i in range(int(input())):
+    a,b=map(int,input().split(" "))
+    if(b<=a):
+        print(b)
+    else:
+        while(b>a):
+            b=b-a-1
+        print(b)
+            
