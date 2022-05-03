@@ -1,0 +1,12 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b,x,y=map(int,input().split(" "))
+    list1=[a,b]
+    list2=[x,y]
+    if(list2[0] in list1 and list2[1]in list1 ):
+        print(0)
+    elif(list2[0] in list1 or list2[1] in list1):
+        print(1)
+    else:
+        print(2)
