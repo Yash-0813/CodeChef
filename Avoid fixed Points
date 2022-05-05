@@ -1,0 +1,11 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    ar=list(map(int,input().split()))
+    k=0
+    for i in range(n):
+        tmp=i+1+k
+        if(tmp==ar[i]):
+            k+=1
+    print(k)
