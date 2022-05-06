@@ -1,0 +1,20 @@
+for i in range(int(input())):
+    n=int(input())
+    l=list(map(int,input().split()))
+    os=0
+    es=0
+    ma=-1
+    mi=1000000000
+    for i in range(n):
+        x=abs(l[i])
+        if (i%2==0):
+            mi=min(x,mi)
+            es+=abs(l[i])
+        else:
+            ma=max(x,ma)
+            os+=abs(l[i])
+    if mi<ma:
+        sum=es-os-mi-mi+ma+ma
+    else:
+        sum=es-os
+    print(sum)
