@@ -1,0 +1,15 @@
+for i in range(int(input())):
+  x,m=list(map(int,input().split()))
+  tmp=2
+  cnt=0
+  while(tmp<=x):
+    tmp<<=1
+    cnt+=1
+  tmp/=2
+  one=cnt+1
+  if (one>m):
+     print("0")
+  elif(tmp==x):
+     print(1+m-one)
+  else:
+     print(m-one)
