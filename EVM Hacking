@@ -1,0 +1,10 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    A,B,C,P,Q,R=map(int,input().split())
+    vote=A+B+C
+    total=P+Q+R
+    if((vote-A+P) > (total/2) or (vote-B+Q)> (total/2) or (vote-C+R)>(total/2) ):
+        print("YES")
+    else:
+        print("NO")
