@@ -1,0 +1,10 @@
+# cook your dish here
+import math
+t=int(input())
+for i in range(t):
+    n=int(input())
+    ans=math.pow(0.143*n,n)
+    if((ans-math.floor(ans))>0.5):
+        print(math.floor(ans)+1)
+    else:
+        print(math.floor(ans))
