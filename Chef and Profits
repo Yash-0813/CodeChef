@@ -1,0 +1,7 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y,z=list(map(int,input().split()))
+    tmp=x*y
+    tmp2=x*z
+    print(tmp2-tmp)
