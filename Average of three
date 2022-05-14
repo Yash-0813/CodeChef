@@ -1,0 +1,7 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    s=int(input())
+    print(s-1,end=" ")
+    print(s,end=" ")
+    print(s+1)
