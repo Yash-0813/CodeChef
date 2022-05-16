@@ -1,0 +1,28 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    
+  N=int(input())
+  L=[]
+  for j in range(N):
+     s=input()
+     k=0   
+     L.append(s)
+  for tmp in set(L):
+      c=0
+      for i in range(len(tmp)):
+          if(i==0):
+              c+=0.2
+          elif(tmp[i]=='d'or tmp[i]=='f'):
+             if(tmp[i-1]=='d'or tmp[i-1]=='f'):
+                c+=0.4
+             else:
+                c+=0.2
+          else:
+            if(tmp[i-1] == 'd' or tmp[i-1] == 'f'):
+                c+= 0.2
+            else:
+                c += 0.4
+      k+=c
+      k+=(L.count(tmp)-1)*(c/(2))
+  print(round(k*10))
