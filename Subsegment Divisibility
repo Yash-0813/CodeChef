@@ -1,0 +1,13 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    j=2
+    tmp=3
+    for i in range(n):
+        print(j,end=" ")
+        if(i & 1):
+            j+=3
+        else:
+            j+=1
+    print()
