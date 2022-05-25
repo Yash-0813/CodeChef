@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t):
+    k=int(input())
+    sum=0
+    while(k%2==0):
+        k=k/2
+        sum+=1
+    print(sum)
