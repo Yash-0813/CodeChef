@@ -1,0 +1,16 @@
+# cook your dish here
+for i in range(int(input())):
+   n=int(input())
+   k=list(map(int,input().split()))
+   mi=k[0]
+   ma=k[0]
+   f=1
+   for i in range(len(k)):
+      mi=min(mi,k[i])
+      ma=max(ma,k[i])
+      if (k[i]!=mi and k[i]!=ma):
+          print("NO")
+          f=0
+          break
+   if (f==1):
+      print("YES")
