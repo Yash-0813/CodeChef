@@ -1,0 +1,14 @@
+for i in range(int(input())):
+    N=int(input())
+    A=list(map(int,input().split()))
+    if (N%2!=0):
+       print(-1)
+    else:
+        one=0
+        zero=0
+        for i in A:
+            if (i==1):
+              one+=1
+            else:
+              zero+=1
+        print(abs(one-zero)//2)
