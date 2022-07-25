@@ -1,0 +1,11 @@
+for i in range(int(input())):
+    n=int(input())
+    string1=input()
+    string2=input()
+    s=""
+    for i in range(len(string2)):
+        if(string1[i]!=string2[i]):
+            s+=string2[i]
+    tmp=set(s)
+    print(len("".join(tmp)))
+            
