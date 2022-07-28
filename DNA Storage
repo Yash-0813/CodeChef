@@ -1,0 +1,16 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    s=input()
+    temp=""
+    for i in range(0,n-1,2):
+        d=s[i:i+2]
+        if(d=="00"):
+            temp+="A"
+        elif(d=="01"):
+            temp+="T"
+        elif(d=="10"):
+            temp+="C"
+        else:
+            temp+="G"
+    print(temp)
