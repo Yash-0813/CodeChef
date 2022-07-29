@@ -1,0 +1,9 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    count1=n//100
+    count2=n-(count1*100)
+    if(count1+count2<=10):
+        print(count1+count2)
+    else:
+        print(-1)
