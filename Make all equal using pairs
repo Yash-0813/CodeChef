@@ -1,0 +1,14 @@
+for i in range(int(input())):
+    n=int(input())
+    memo={}
+    l=list(map(int,input().split()))
+    temp=[]
+    for i in l:
+        if(i  in memo):
+            memo[i]+=1
+        else:
+            memo[i]=1
+    minval=-1
+    for i in memo.values():
+        minval=max(minval,i)
+    print(n-minval)
