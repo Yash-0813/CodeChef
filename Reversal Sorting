@@ -1,0 +1,20 @@
+# cook your dish here
+def gethelp(arr,n,x):
+    for i in range(n-1):
+        if(arr[i]>arr[i+1]):
+            if(arr[i]+arr[i+1]>x):
+                return False
+            else:
+                temp=arr[i]
+                arr[i]=arr[i+1]
+                arr[i+1]=temp
+    return True
+for i in range(int(input())):
+    n,x=list(map(int,input().split()))
+    arr=list(map(int,input().split()))
+    flag=gethelp(arr,n,x)
+    
+    if(flag):
+        print("YEs")
+    else:
+        print("No")
