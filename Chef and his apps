@@ -1,0 +1,14 @@
+# cook your dish here
+for i in range(int(input())):
+    s,x,y,z=list(map(int,input().split()))
+    tmp=s-z
+    if(x+y<=tmp):
+        print(0)
+        
+    
+   
+    elif(tmp<x+y):
+        if(tmp<x and tmp<y):
+            print(2)
+        else:
+            print(1)
