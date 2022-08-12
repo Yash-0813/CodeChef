@@ -1,0 +1,10 @@
+for i in range(int(input())):
+    x,y,n,r=list(map(int,input().split()))
+    if(r<(x*n)):
+        print("-1")
+    else:
+        tmp=(r-(n*x))//(y-x)
+        tmp=min(tmp,n)
+        tmp2=n-tmp
+        print(tmp2,end=" ")
+        print(tmp)
