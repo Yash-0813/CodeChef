@@ -1,0 +1,14 @@
+# cook your dish here
+for i in range(int(input())):
+    a,b,n=list(map(int,input().split()))
+    if(a%b==0):
+        print("-1")
+    else:
+        res=n
+        if(n%a):
+            res=(n-(n%a))+a
+        if(res%b!=0):
+            print(res)
+        else:
+            res=res+a
+            print(res)
