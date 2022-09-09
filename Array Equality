@@ -1,0 +1,18 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    a=list(map(int,input().split()))
+    memo={}
+    freq=0
+    for current in a:
+        if(current in memo):
+            memo[current]+=1
+        else:
+            memo[current]=1
+    for i in range(n):
+        if(freq<memo[a[i]]):
+            freq=memo[a[i]]
+    if(freq>(n+1)/2):
+        print("No")
+    else:
+        print("YES")
