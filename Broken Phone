@@ -1,0 +1,9 @@
+# cook your dish here
+for i in range(int(input())):
+    x,y=list(map(int,input().split()))
+    if(x<y):
+        print("REPAIR")
+    elif(y<x):
+        print("NEW PHONE")
+    else:
+        print("ANY")
