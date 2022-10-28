@@ -1,0 +1,12 @@
+# cook your dish here
+for i in range(int(input())):
+    n,m=list(map(int,input().split()))
+    arr=list(map(int,input().split()))
+    sum=0
+    for i in arr:
+        if(i<=m//2):
+            sum+=abs(m-i)
+        else:
+            sum+=abs(i-1)
+    print(sum)
+            
