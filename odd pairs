@@ -1,0 +1,6 @@
+# cook your dish here
+import math
+for i in range(int(input())):
+    c=0
+    n=int(input())
+    print(2*math.floor(n/2)*math.ceil(n/2))
