@@ -1,0 +1,15 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    p=list(map(int,input().split()))
+    s=set(p)
+    
+    for i in (s):
+        if(p.count(i)%i==0):
+            ans="yes"
+            
+        else:
+            ans="No"
+            break
+    print(ans)
+            
