@@ -1,0 +1,24 @@
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    l=list(map(int,input().split()))
+    first=0
+    last=0
+    for i in range(n):
+        if(l[i]==1):
+            first=i
+        if(l[i]==n):
+             last=i
+    ans=0
+    if(l[0]==1 and l[n-1]==n):
+        ans=0
+    elif(first==0 and last!=n-1):
+        ans=n-1-last
+    elif(first!=0 and last==n-1):
+        ans=first
+    else:
+        ans=n-1-last+first
+        if(last<first):
+            ans-=1
+    print(ans)
+    
